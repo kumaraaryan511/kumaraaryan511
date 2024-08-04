@@ -75,6 +75,26 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: left;
             width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .black-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('your-gif-file.gif'); /* Path to your GIF */
+            background-repeat: repeat-y; /* Repeat vertically */
+            opacity: 0.3; /* Set transparency */
+            z-index: 0;
+        }
+
+        .black-box p {
+            position: relative;
+            z-index: 1;
         }
 
         @media (max-width: 600px) {
