@@ -19,18 +19,13 @@
             background-size: cover;
         }
 
-        .main-container {
-            width: 80%;
-            max-width: 600px;
-            margin-top: 50px; /* Adjust margin to move the box higher */
-        }
-
         .purple-box {
+            width: 100%; /* Make the purple box full width */
             position: relative;
             text-align: center;
             background-color: #3e206d; /* Dark purple */
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 0; /* Remove border-radius to make it rectangular */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
             overflow: hidden; /* Ensure the image doesn't overflow */
@@ -65,6 +60,13 @@
             z-index: 1;
         }
 
+        .main-container {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 50px; /* Adjust margin to move the box higher */
+            margin: 0 auto;
+        }
+
         .black-box {
             background-color: black;
             color: white;
@@ -72,6 +74,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: left;
+            width: 100%;
         }
 
         @media (max-width: 600px) {
@@ -82,11 +85,11 @@
     </style>
 </head>
 <body>
+    <div class="purple-box">
+        <h1>Hello</h1>
+        <h6>I am kumaraaryan511. Welcome to my GitHub page, where you can find some random things I made. I hope you like it.</h6>
+    </div>
     <div class="main-container">
-        <div class="purple-box">
-            <h1>Hello</h1>
-            <h6>I am kumaraaryan511. Welcome to my GitHub page, where you can find some random things I made. I hope you like it.</h6>
-        </div>
         <div class="black-box">
             <p>Whitepapers in progress</p>
         </div>
