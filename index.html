@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,7 +28,7 @@
             padding: 200px;
             border-radius: 0; /* Remove border-radius to make it rectangular */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-bottom: 40px;
+            margin: 0; /* Remove bottom margin */
             overflow: hidden; /* Ensure the image doesn't overflow */
         }
 
@@ -56,15 +57,9 @@
         h6 {
             color: #d6b3ff; /* Light purple */
             margin-top: 10px;
+            margin-bottom: 0; /* Remove bottom margin */
             position: relative;
             z-index: 1;
-        }
-
-        .main-container {
-            width: 80%;
-            max-width: 600px;
-            margin-top: 50px; /* Adjust margin to move the box higher */
-            margin: 0 auto;
         }
 
         .black-box {
@@ -95,6 +90,7 @@
         .black-box p {
             position: relative;
             z-index: 1;
+            margin: 0; /* Remove paragraph margin */
         }
 
         @media (max-width: 600px) {
@@ -109,10 +105,8 @@
         <h1>Hello</h1>
         <h6>I am kumaraaryan511. Welcome to my GitHub page, where you can find some random things I made. I hope you like it.</h6>
     </div>
-    <div class="main-container">
-        <div class="black-box">
-            <p>I have a Whitepaper in progress on an approach to prevent a combination of DDoS + brute-force password attacks for services that do not wish to employ 2FA.</p>
-        </div>
+    <div class="black-box">
+        <p>I have a Whitepaper in progress on an approach to prevent a combination of DDoS + brute-force password attacks for services that do not wish to employ 2FA.</p>
     </div>
 </body>
 </html>
