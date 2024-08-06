@@ -6,98 +6,102 @@
     <title>kumaraaryan511</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #d6d1ff;
-            /*background-image: url('TransparentAvatar.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;*/
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6d1ff;
+    /*background-image: url('TransparentAvatar.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;*/
+    min-height: 100vh; /* Ensure the body takes at least the height of the viewport */
+}
 
-        .purple-box {
-            width: 100%; /* Make the purple box full width */
-            position: relative;
-            text-align: center;
-            background-color: #3e206d; /* Dark purple */
-            padding: 200px;
-            border-radius: 0; /* Remove border-radius to make it rectangular */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 0; /* Remove bottom margin */
-            overflow: hidden; /* Ensure the image doesn't overflow */
-        }
+.purple-box {
+    width: 100%; /* Make the purple box full width */
+    position: relative;
+    text-align: center;
+    background-color: #3e206d; /* Dark purple */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-radius: 0; /* Remove border-radius to make it rectangular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Remove bottom margin */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
 
-        .purple-box::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('Images/dancing.gif'); /* Background GIF path */
-            background-size: cover;
-            background-position: center;
-            opacity: 0.3; /* Set the transparency of the GIF */
-            z-index: 0;
-        }
+.purple-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Images/dancing.gif'); /* Background GIF path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Set the transparency of the GIF */
+    z-index: 0;
+}
 
-        h1 {
-            font-size: 4em;
-            color: white;
-            margin: 0;
-            position: relative;
-            z-index: 1;
-        }
+h1 {
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
 
-        h6 {
-            color: #d6b3ff; /* Light purple */
-            margin-top: 10px;
-            margin-bottom: 0; /* Remove bottom margin */
-            position: relative;
-            z-index: 1;
-        }
+h6 {
+    color: #d6b3ff; /* Light purple */
+    margin-top: 10px;
+    margin-bottom: 0; /* Remove bottom margin */
+    position: relative;
+    z-index: 1;
+}
 
-        .black-box {
-            background-color: black;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: left;
-            width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
+.black-box {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px; /* Add some spacing between the purple and black boxes */
+}
 
-        .black-box::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('your-gif-file.gif'); /* Path to your GIF */
-            background-repeat: repeat; /* Repeat vertically */
-            opacity: 0.3; /* Set transparency */
-            z-index: 0;
-        }
+.black-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('your-gif-file.gif'); /* Path to your GIF */
+    background-repeat: repeat; /* Repeat vertically */
+    opacity: 0.3; /* Set transparency */
+    z-index: 0;
+}
 
-        .black-box p {
-            position: relative;
-            z-index: 1;
-            margin: 0; /* Remove paragraph margin */
-        }
+.black-box p {
+    position: relative;
+    z-index: 1;
+    margin: 0; /* Remove paragraph margin */
+}
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 3em;
-            }
-        }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
     </style>
 </head>
 <body>
